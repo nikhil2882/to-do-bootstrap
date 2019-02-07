@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>
+            To do
+        </title>
+        <style>
+            .background-grey
+            {
+                background: lightgray;
+            }
+
+            .full-height
+            {
+                height: 100%;
+            }
+
+            .text-align-center
+            {
+                text-align: center;
+            }
+
+            .default-padding
+            {
+                padding: 10px;
+            }
+
+            .table-header
+            {
+                background: #000000;
+                color: white;
+                padding: 10px;
+            }
+
+            .table-body-row
+            {
+                background: white;
+                color: black;
+                padding: 5px;
+            }
+        </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container background-grey full-height default-padding">
+            <!-- this row will serve as add to do part -->
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <form>
+                        <div class="form-group">
+                            <input  class="form-control" id="todo_text"  placeholder="Enter task">
+                        </div>
+                    </form>    
+                </div>
+                <div class="col-2 text-align-center">
+                    <button type="button" id="add_todo_button" class="btn btn-primary">Add</button>
+                </div>
+            </div>
+            <!-- this container will serve as store todo table -->
+            <div class="container" id="table_container">
+                <!-- this hardcoded row will act as table header -->
+                <div class="row table-header">
+                    <div class="col-2">
+                        S.No.
+                    </div>
+                    <div class="col-4">
+                        Task
+                    </div>
+                    <div class="col-3">
+                        Date
+                    </div>
+                    <div class="col-3">
+                        Time
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</html>
